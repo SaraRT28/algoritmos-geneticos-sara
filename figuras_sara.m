@@ -80,7 +80,7 @@ Z = -a*exp(-b*sqrt((X.^2 + Y.^2)/2)) - exp((cos(c*X) + cos(c*Y))/2) + a + 3;
 figure('Color','w','Position',[100 100 900 380]);
 subplot(1,2,1); plot(x, f1, 'LineWidth', 1.2); grid on;
 xlabel('x'); ylabel('f(x)'); title('(a) Ackley, d = 1');
-subplot(1,2,2); contourf(X, Y, Z, 30); colorbar;
+subplot(1,2,2); contourf(X, Y, Z, 40, 'LineStyle', 'none'); colorbar;
 xlabel('x_1'); ylabel('x_2'); title('(b) Ackley, d = 2');
 exportgraphics(gcf, 'fig_s_ackley.png', 'Resolution', 300);
 
